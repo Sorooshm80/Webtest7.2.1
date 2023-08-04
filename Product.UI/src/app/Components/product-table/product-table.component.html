@@ -1,0 +1,40 @@
+<div style="overflow-x:auto;">
+  
+  <div class="search-bar-container">
+      <input class="Searchbar" type="text" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="Search()">
+  </div>
+  <div id="table-wrapper"></div>
+  
+  <div class="paginator-container">
+  <div class="paginator">
+      <div class="page-size">
+          <!-- <mat-form-field  appearance="outline" class="pagesize-form-field"> -->
+              <!-- <mat-label>Rows per page</mat-label> -->
+              <input type="number" [(ngModel)]="pageSize" (ngModelChange)="pageSizeChanged($event)" min="1" >
+          <!-- </mat-form-field> -->
+      </div>
+      <div class="page-navigation">
+          <button class="pagenavbutton" mat-icon-button mat-ripple (click)="firstPage()">
+              <mat-icon>first_page</mat-icon>
+          </button>
+          <button class="pagenavbutton" mat-icon-button mat-ripple (click)="prevPage()">
+              <mat-icon>navigate_before</mat-icon>
+          </button>
+          <div class="page-index">
+              <mat-form-field  class="page-index-form" >
+                  <!-- <label for="page-select">Page:</label> -->
+                  <select id= page-select [(ngModel)]="pageIndex" (ngModelChange)="pageIndexChanged($event)" mat-ripple>
+                      <option id=pageindexoption ></option>
+                  </select>
+              </mat-form-field>
+          </div>
+          <button class="pagenavbutton" mat-icon-button mat-ripple (click)="nextPage()">
+              <mat-icon>navigate_next</mat-icon>
+          </button>
+          <button class="pagenavbutton" mat-icon-button mat-ripple (click)="lastPage()">
+              <mat-icon>last_page</mat-icon>
+          </button>
+      </div>
+  </div>
+</div>
+</div>

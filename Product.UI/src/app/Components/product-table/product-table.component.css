@@ -1,0 +1,89 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+.Searchbar{
+    height: 32px;
+    width : 80% ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+
+.paginator-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 16px 0;
+  }
+
+  .mat-mdc-form-field{
+    width: 80px;
+    justify-items: center;
+    
+  }
+  
+  .page-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-size {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-size input {
+    width: 50px;
+    height: 32px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  .page-index select {
+    height: 32px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .page-index {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+
+  .pagenavbutton {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pagenavbutton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
